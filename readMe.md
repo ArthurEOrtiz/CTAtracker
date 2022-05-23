@@ -1,4 +1,4 @@
-# BLANK
+# CTA Tracker
 _By Arthur Edward Ortiz_
 
 ## Scope / Assignments 
@@ -23,4 +23,5 @@ _By Arthur Edward Ortiz_
 ## Known Bugs 
 
 ## License
+_Data provided by Chicago Transit Authority_
 _Copyright (c) MONTH DAY, 2022 Arthur Edward Ortiz MIT_
