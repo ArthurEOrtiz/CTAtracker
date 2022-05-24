@@ -1,4 +1,4 @@
-# CTA Tracker
+# Chicago Station Index 
 _By Arthur Edward Ortiz_
 
 ## Scope / Assignments 
