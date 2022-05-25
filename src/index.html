@@ -5,13 +5,16 @@
 </head>
 <header><h1>CTA Train Tracker</h1></header>
 <body>
-  
-  <button class="btn-sucess" id="loadTrains">Refresh Schedule</button>
+  <form>
+  <label>Stop ID number</label>
+  <input type="number" id="stopId">
+  <button class="btn btn-light" id="loadTrains">Refresh Schedule</button>
+</form>
   <div class="results">
     <h4 class="staNm"></h4>
-    <p><span class="rn"></span></p>
-    <p><span class="destNm"></span></p>
-    <p><span class="arrT"></span></p>
+    <p>Run #<span class="rn"></span></p>
+    <p>Towards <span class="destNm"></span></p>
+    <p>Arrival Time <span class="arrT"></span></p>
   </div>
   
 </body>
