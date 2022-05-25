@@ -13,7 +13,7 @@ import TrainTrackerService from './js/train-tracker-service';
 } */
 
 $(document).ready(function(){
-  $("#loadTrains").click(function(){
+  $("#loadTrains").click(function(event){
     event.preventDefault();
     let stopId = $('#stopId').val();
     console.log(stopId);
@@ -21,13 +21,14 @@ $(document).ready(function(){
     let promise = TrainTrackerService.getTrainSchedule(stopId);
     promise.then(function(response){
       const body = JSON.parse(response);
+      console.log(body.ctatt.eta.length);
       $('.staNm').text(`${body.ctatt.eta[1].staNm}`);
       $('.rn').text(`${body.ctatt.eta[1].rn}`);
       $('.destNm').text(`${body.ctatt.eta[1].destNm}`);
       $('.arrT').text(`${body.ctatt.eta[1].arrT}`);
       console.log(body);
     }, function(error) {
-      console.log(`${error}`); 
+      console.log(`${error}`);
     });
 
   });
