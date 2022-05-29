@@ -21,10 +21,9 @@ $(document).ready(function(){
     event.preventDefault();
     let stopId = $('#stopId').val();
     console.log(stopId);
-    TrainTrackerService.getTrainSchedule(stopId)
-      .then(function(response) {
-        getElements(response);
-      });
+    (async function() {
+      const response = await TrainTrackerService.getTrainSchedule(stopId);
+      getElements(response);
+    })();
   });
-
 });

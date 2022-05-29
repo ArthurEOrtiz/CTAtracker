@@ -9,7 +9,7 @@ export default class TrainTrackerService {
       })
       .catch(function(error) {
         return error;
-      })
+      });
   }
 }
 
